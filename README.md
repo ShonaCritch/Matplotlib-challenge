@@ -15,15 +15,16 @@ As the design of the study ensured that all mice, despite varying weights, start
 
 Method:
 
-The study included 249 mice identified with SCC tumor growth; all were chosen with the same starting tumor volume of 45mm.   
+The study included 249 mice identified with SCC tumor growth; all were chosen with the same starting tumor volume of 45mm3.   
 The mice were split randomly into 10 treatement arms, 9 drugs and 1 placebo. 
-The mice were measured once at day 0 of the study.
+The mice weight was measured once at day 0 of the study.
 All mice recieved the same dose of the drug within the treatment arm.
-The study took place over the course of 45 days, with tumor development observed and measured every 5 days. 
+The study took place over the course of 45 days, with tumor development observed and volume measured every 5 days. 
 
 Analysis:
 
-Data was cleaned and analysed in Python.  Duplicate data was removed for all mice where duplicate measures were taken; 1 mouse data set removed, leaving 248 mice in the analysis.
+Data was cleaned and analysed in Python.  Duplicate data was removed for all mice where duplicate measures were taken; 1 mouse data set was removed, leaving 248 mice in the analysis.
+
 Basic inferential statistics, Mean, Median, SD, Var and Std Error were performed on all treatment arms and the placebo. 
 
 Capomulin and 3 of the top performing treatments (Ramicane, Infubinol and Ceftamin), were compared using quartile plots. Outliers were determined and indicated on relevant treatment arm plots, no outliers were deemed astronomical or removed.  
@@ -47,7 +48,7 @@ Comparison of Capomulin against 3 of the other best performing drugs (Ramicane, 
 
 ![boxes](Images/boxes.png)
 
-Randomly selected Capomulin treatement mouse, tumor volume trajectory over treatment days
+Randomly selected Capomulin treatement mouse, Tumor Volume trajectory over treatment days
 
 ![mouse_line](Images/mouse_line.png)
 
@@ -57,7 +58,7 @@ Linear Regression of Mouse Weight and Average Tumor Volume for Capomulin treatme
 
 Discussion:
 
-Capomulin was found to reduce tumor volume growth as demonstrated by low measures of central tendancy and variance.  This is clearly demonstrated in the random mouse treatment trajectory plotted, with a clear downward trend in tumor size plotted across the lenght of the study.  
+Capomulin was found to reduce tumor volume growth and promote shrinkage, as demonstrated by low measures of central tendancy and variance.  This is clearly demonstrated in the random mouse treatment trajectory plotted, with a clear downward trend in tumor size plotted across the lenght of the study.  
 
 The linear regression demonstrated a stong positive relationship between mouse weight, taken at the commencement of the study, and average tumor volume (reduced from starting volume) within the Capomulin treated mice; Pearsons r value of 0.84 and r squared of 0.71. Indicating that dose given showed more accelerated shrinkage of tumor volume in smaller mice than heavier mice. 
 
